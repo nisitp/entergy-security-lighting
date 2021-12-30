@@ -1,0 +1,94 @@
+﻿@model security_lighting_microsite.models.Fixture
+
+<header id="home" class="container">
+  <div class="row">
+    <div class="test hero-image">
+      <img src="~/images/fixtures/@Model.Type.ToLower()/banner-image.jpg" class="img-responsive" />
+    </div>
+  </div>
+</header>
+
+<section id="fixture-details" class="fixture-details container" data-nav-text="Fixture Details">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>@Model.Type Details</h2>
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <img src="~/images/fixtures/@(Model.Type.ToLower())/product-image.jpg" id="fixture-detail-image" class="img-responsive" />
+
+      <h3>Applications</h3>
+
+      <ul>
+        @foreach (var application in Model.Applications) {
+          <li>@application</li>
+        }
+      </ul>
+    </div>
+
+    <div class="col-xs-12 col-sm-8">
+      <h3>Features</h3>
+
+      <ul>
+        @foreach (var feature in Model.Features) {
+          <li>@feature</li>
+        }
+      </ul>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Illumination Distance</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          @foreach (var variation in Model.Variations.Where(v => v.Availability.Contains(ViewBag.OpCoCode))) {
+            <tr>
+              <td>@variation.Fixture</td>
+              @if (variation.Illumination != null) {
+                if (variation.Illumination.Diameter.HasValue) {
+                  <td>@variation.Illumination.Diameter feet</td>
+                }
+
+                if (variation.Illumination.Width.HasValue) {
+                  <td>@variation.Illumination.Width feet x @variation.Illumination.Width feet</td>
+                }
+              } else {
+                <td>&nbsp;</td>
+              }
+            </tr>
+          }
+        </tbody>
+      </table>
+      <a href="~/spec-sheets/@Model.Specsheet" class="btn btn-entergy btn-hollow" download>Download Full Spec Sheet</a>
+    </div>
+  </div>
+</section>
+
+<div class="full-bleed-background svg-background zigzag-up-down"></div>
+
+<section id="installations" class="fixture-installations container" data-nav-text="Installations">
+  <div class="row">
+    <div class="col-xs-12">
+      <h3>@Model.Type Installations</h3>
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <img src="~/images/fixtures/@Model.Type/installation-1.jpg" class="img-responsive" />
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <img src="~/images/fixtures/@Model.Type/installation-2.jpg" class="img-responsive" />
+    </div>
+
+    <div class="col-xs-12 col-sm-4">
+      <img src="~/images/fixtures/@Model.Type/installation-3.jpg" class="img-responsive" />
+    </div>
+  </div>
+</section>
+
+@Html.Partial("_contact")
+
+@Html.Partial("_fixtures", false)

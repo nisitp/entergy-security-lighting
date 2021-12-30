@@ -1,0 +1,531 @@
+﻿@{
+  ViewBag.Title = "Home Page";
+}
+
+<header id="home" class="container-fluid" data-nav-text="Security Lighting Home">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="container">
+        <div class="text-wrap">
+          <h1>Security Lighting by Entergy</h1>
+
+          <p>
+            Increase security and visibility around your home or commercial setting with our cost-effective and worry-free
+            security lighting.
+          </p>
+        </div>
+
+        @Helpers.InjectSVG("hero-lamp.svg")
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <section id="security-lighting-benefits" class="row security-lighting-benefits collapsed" data-nav-text="Benefits">
+    <div class="col-xs-12">
+      <h2>Security Lighting Benefits</h2>
+    </div>
+
+    <div class="col-md-4">
+      <img src="~/images/worry-free-maintenance-icon.png" />
+
+      <h4>Worry-Free Maintenance</h4>
+
+      <p>We'll maintain all needed repairs and bulb replacement.</p>
+    </div>
+
+    <div class="col-md-4">
+      <img src="~/images/free-installation-icon.png" />
+
+      <h4>Free Installation</h4>
+
+      <p>Free with existing utility pole. If you need a pole, we'll work with you on a cost-effective option.</p>
+    </div>
+
+    <div class="col-md-4 last">
+      <img src="~/images/affordable-and-convenient-icon.png" />
+
+      <h4>Affordable &amp; Convenient</h4>
+
+      <p>One low fee rolls into your monthly bill.</p>
+    </div>
+  </section>
+
+  <section id="benefits-of-leasing" class="row benefits-of-leasing" data-nav-text="Benefits of Leasing">
+    <div class="col-xs-12">
+      <h3>Benefits of leasing a fixture from Entergy</h3>
+    </div>
+
+    <div class="col-xs-12 benefits-table">
+      <ul class="heading">
+        <li>&nbsp;</li>
+        <li>Entergy Lighting</li>
+        <li>Customer Owned</li>
+      </ul>
+
+      <ul class="benefit-comparison">
+        <li>Upfront Costs</li>
+        <li>
+          <p>Entergy Lighting</p>
+          <p>Minimal or none required</p>
+        </li>
+        <li>
+          <p>Customer Owned</p>
+          <p>Upfront capital to cover materials and installation</p>
+        </li>
+      </ul>
+
+      <ul class="benefit-comparison">
+        <li>Maintenance</li>
+        <li>
+          <p>Entergy Lighting</p>
+          <p>Included in your monthly fee</p>
+        </li>
+        <li>
+          <p>Customer Owned</p>
+          <p>Costly, inconvenient and time consuming</p>
+        </li>
+      </ul>
+
+      <ul class="benefit-comparison">
+        <li>Maintenance Costs</li>
+        <li>
+          <p>Entergy Lighting</p>
+          <p>Included in your monthly fee</p>
+        </li>
+        <li>
+          <p>Customer Owned</p>
+          <p>Customer responsible for all replacement costs</p>
+        </li>
+      </ul>
+
+      <ul class="benefit-comparison">
+        <li>Energy Costs</li>
+        <li>
+          <p>Entergy Lighting</p>
+          <p>Included in your monthly fee</p>
+        </li>
+        <li>
+          <p>Customer Owned</p>
+          <p>Actual energy costs subject to change each month</p>
+        </li>
+      </ul>
+
+      <ul class="benefit-comparison">
+        <li>Tax Benefits</li>
+        <li>
+          <p>Entergy Lighting</p>
+          <p>Costs are generally 100% deductible in the first year</p>
+        </li>
+        <li>
+          <p>Customer Owned</p>
+          <p>Investment generally needs to be depreciated over several years</p>
+        </li>
+      </ul>
+
+      <ul class="benefit-comparison">
+        <li>Risks</li>
+        <li>
+          <p>Entergy Lighting</p>
+          <p>No ownership risks</p>
+        </li>
+        <li>
+          <p>Customer Owned</p>
+          <p>Replacement costs; ongoing maintenance and repair issues are all out of pocket expenses</p>
+        </li>
+      </ul>
+
+      <ul class="benefit-comparison">
+        <li>Easy Payment</li>
+        <li>
+          <p>Entergy Lighting</p>
+          <p>Included in your monthly electric bill</p>
+        </li>
+        <li>
+          <p>Customer Owned</p>
+          <p>All costs are upfront on installation and repair</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="row">
+    <div class="col-xs-12 benefits-toggle-container">
+      <a href="#" class="show-more toggle-benefits">Show more benefits</a>
+      <a href="#" class="show-less toggle-benefits">Show fewer benefits</a>
+    </div>
+  </div>
+
+  <div class="full-bleed-background svg-background zigzag-up-down"></div>
+
+  <section id="why-is-security-lighting-important" class="row why-is-security-lighting-important"
+           data-nav-text="Why is Security Lighting important">
+    <div class="col-xs-12">
+      <h2>Why is Security Lighting important</h2>
+	    <div class="embed-responsive embed-responsive-16by9">		
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/242928037" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+<!--      <img class="center-block img-responsive" src="~/images/video-placeholder.jpg" />-->
+    </div>
+  </section>
+</div>
+
+<section id="region-selection" class="region-selection container-fluid" data-nav-text="Available Fixtures">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 available-fixtures-no-region">
+            <h2>What Security Lighting does Entergy have to offer in your area?</h2>
+
+            <div class="dropdown">
+              <button class="btn btn-entergy btn-entergy-inverse" data-toggle="dropdown">
+                <span class="dropdown-text">Select your region</span>
+                <span class="caret"></span>
+              </button>
+
+              <ul class="dropdown-menu dropdown-menu-inverse">
+                <li><a href="/mississippi/">Mississippi</a></li>
+                <li><a href="/gulf-states-louisiana/">Gulf States Louisiana</a></li>
+                <li><a href="/louisiana/">Louisiana</a></li>
+                <li><a href="/texas/">Texas</a></li>
+                <li><a href="/arkansas/">Arkansas</a></li>
+                <li><a href="/new-orleans/">New Orleans</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@Html.Partial("_fixtures", true)
+
+<div class="container">
+  <div class="full-bleed-background svg-background white-arrow-line"></div>
+</div>
+
+<section id="best-bulb-choices" class="best-bulb-choices container-fluid" data-nav-text="Best Bulb Choices">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>What's the best bulb choice for your application?</h3>
+          </div>
+
+          <div class="col-xs-12 col-md-6 bulb-choice">
+            <img src="~/images/proof/cobra-fixture-sample.jpg" />
+
+            <div class="text-wrap">
+              <h4>High Pressure Sodium</h4>
+
+              <p>
+                Produce an amber color and are used for security illumination when aesthetics are less important.
+                These lamps are commonly found in backyards and warehouse areas, and are the typical streetlights.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-md-6 bulb-choice">
+            <img src="~/images/proof/cobra-fixture-sample.jpg" />
+
+            <div class="text-wrap">
+              <h4>Metal Halide</h4>
+
+              <p>
+                Produce a clean, white light and are used when both aesthetics and color are important. These lamps
+                work well with security cameras, since  they provide clear, crisp lighting for the resulting video.
+                Because of these advantages, halide lights are commonly found in driveways, outdoor parking lots and
+                retail store frontages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials container-fluid" data-nav-text="What are Entergy customers saying">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>What are Entergy customers saying?</h2>
+          </div>
+
+          <div class="testimonial testimonial-video col-xs-12">
+            <img src="~/images/video-placeholder.jpg" />
+
+            <div class="text-wrap">
+              @Helpers.InjectSVG("left-quote.svg")
+
+              <blockquote>
+                <p>
+                  fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer
+                  eu augue augue nunc elit dolor, luctus placerat. Ut fusce varius nisl ac
+                  ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit
+                  dolor, luctus placerat.
+                </p>
+
+                <p class="byline byline-name">&mdash; JOHN SMITH</p>
+                <p class="byline byline-title">President, XYZ Company</p>
+              </blockquote>
+
+              @Helpers.InjectSVG("right-quote.svg")
+            </div>
+          </div>
+
+          <div class="col-xs-12 house-illustration-container">
+            @Helpers.InjectSVG("house-illustration.svg")
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+@Html.Partial("_contact")
+
+<section id="installations" class="installations container" data-nav-text="Our Installations">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>Testimonials and Installations</h2>
+    </div>
+
+    <div class="testimonials col-xs-12">
+      <div class="testimonial">
+        <div class="text-wrap">
+          <blockquote>
+            <p>
+              Entergy's customer service and professionalism is what has sold me. I can actually talk
+              to a real live person anytime I have a question and they explain to me my options and
+              that means a lot to me. Our company has gone under a massive safety lighting project
+              throughout our entire railroad line and Entergy has been there step by step. Entergy has
+              been extremely helpful both on the phone and in meeting me at numerous locations in
+              completing this project. From the Customer Service representatives, to the managers,
+              to the lineman; all have been A+ individuals and I recommend Entergy for anyone's
+              electrical needs.
+            </p>
+
+            <p class="byline byline-name">&mdash; Scott Wollack</p>
+            <p class="byline byline-title">Manager of Train Operations, New Orleans &amp; Gulf Coast Railway</p>
+          </blockquote>
+
+          @Helpers.InjectSVG("right-quote.svg")
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="text-wrap">
+          <blockquote>
+            <p>
+              Through the repair, replacement, upgrade and installation of new lights, we have lowered
+              our crime rate and given residents the ability to have a safer neighborhood. We have also
+              kept existing businesses and attracted new businesses through this lighting program.
+            </p>
+
+            <p class="byline byline-name">&mdash; D. E. Sosa</p>
+            <p class="byline byline-title">City Manager, Groves, Texas</p>
+          </blockquote>
+
+          @Helpers.InjectSVG("left-quote.svg")
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="text-wrap">
+          <blockquote>
+            <p>
+              I want to thank you for putting in my outside pole security light. It was put in exactly like I requested. It shines all over my
+              property and it is so nice to have it.
+            </p>
+
+            <p>
+              Thank you for installing the light in a timely manner. Thank you for all you do!
+            </p>
+
+            <p class="byline byline-name">&mdash; Martha Jane</p>
+            <p class="byline byline-title">Entergy Arkansas, Customer</p>
+          </blockquote>
+
+          @Helpers.InjectSVG("right-quote.svg")
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="col-xs-12 installations">
+      <img src="~/images/proof/installation-1.jpg" class="img-responsive" alt="" />
+      <img src="~/images/proof/installation-2.jpg" class="img-responsive img-half" alt="" />
+      <img src="~/images/proof/installation-3.jpg" class="img-responsive img-half" alt="" />
+      <img src="~/images/proof/installation-4.jpg" class="img-responsive img-half" alt="" />
+      <img src="~/images/proof/installation-5.jpg" class="img-responsive img-half" alt="" />
+      <img src="~/images/proof/installation-6.jpg" class="img-responsive img-half" alt="" />
+      <img src="~/images/proof/installation-7.jpg" class="img-responsive img-half" alt="" />
+      <img src="~/images/proof/installation-8.jpg" class="img-responsive" alt="" />
+    </div>
+  </div>
+</section>
+
+<div class="full-bleed-background svg-background zigzag-single"></div>
+
+<section id="faqs" class="faqs container" data-nav-text="FAQs about Security Lighting">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>FAQs about Security Lighting</h2>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <dl>
+        <dt>What is Entergy’s security lighting program?</dt>
+        <dd>
+          Entergy’s program is an easy and convenient way to provide outdoor lighting for your home or business.
+          For a low monthly fee, Entergy installs, maintains and makes repairs and replacements to outdoor security
+          lights installed on Entergy poles that illuminate customer residences and/or businesses.
+        </dd>
+
+        <dt class="collapsed">How can I apply for security lighting?</dt>
+        <dd>
+          Contact Entergy at 1-866-603-0192, or <a id="faq-contact-us" href="#contact">contact us online</a>.
+        </dd>
+
+        <dt class="collapsed">How much does it cost?</dt>
+        <dd>
+          Each project varies, based on the individual customer’s needs. Pricing varies depending on the style of
+          light, wattage, and installation costs.
+        </dd>
+
+        <dt class="collapsed">What type of lights do you offer?</dt>
+        <dd>
+          Entergy offers high-quality utility grade outdoor lighting. Entergy has high-pressure sodium and metal
+          halide lights available in various different wattages.
+        </dd>
+
+        <dt class="collapsed">Where does Entergy install lighting?</dt>
+        <dd>
+          Entergy will install lighting on Entergy utility poles. Entergy’s lighting group also assists customers
+          with determining installation of decorative lighting and individual poles. Entergy will not install or
+          affix lighting fixtures on a customer’s home or commercial buildings.
+        </dd>
+      </dl>
+
+      <div class="col-xs-12 show-more-container">
+        <a href="#" class="show-more">Show more</a>
+      </div>
+
+      <dl class="more-faqs">
+        <dt class="collapsed">Is there any upfront cost with Entergy Lights?</dt>
+        <dd>
+          There is no upfront installation cost for most lighting projects. Some areas within Entergy’s service
+          territory may require a low-cost installation. In others, the installation cost is built into the monthly
+          fee. Entergy’s lighting representatives will provide specific information for your area.
+        </dd>
+
+        <dt class="collapsed">Is the electricity included in the cost of the light?</dt>
+        <dd>
+          Yes. With all Entergy lights, the electricity with a fixed KWH consumption per month is included in the
+          monthly price of the light. The fuel component of the electric rate is included in the monthly bill, as
+          it is with all our electricity rates.
+        </dd>
+
+        <dt class="collapsed">Can Entergy install a switch on a pole to control turning the light off and on?</dt>
+        <dd>
+          Entergy’s outdoor lighting program provides independent dusk-to-dawn operation of the lights that is
+          operated by a photo cell attached directly to the lighting fixture. There is no need for an additional
+          switch to operate the light. All Entergy security lights are equipped with this automatic system.
+        </dd>
+
+        <dt class="collapsed">Can an installed light face the street?</dt>
+        <dd>
+          Typically, the outdoor lighting service directs illumination towards the customer’s home or business. However,
+          Entergy also offers a street light program for illumination of roadways that are part of the local municipality
+          (town, city, county, or parish) responsibility.
+        </dd>
+
+        <dt class="collapsed">Can a light be installed on a pole across the street from a property?</dt>
+        <dd>
+          Lights can be placed across the street from a customer’s address, as long as the illumination does not
+          interfere with street lighting that illuminates the roadway. Typically, lights are installed to illuminate
+          a driveway, building or entry area for a home or business.
+        </dd>
+
+        <dt class="collapsed">Will you install lighting on a building or a tree? Or can I install my own pole?</dt>
+        <dd>
+          Entergy installs outdoor lighting on Entergy owned and maintained utility poles in proximity to the customer’s
+          home or business. Entergy does not attach lighting fixtures to customer’s buildings, premises or their own poles.
+          Customers who need to install a pole for a lighting fixture can request for Entergy to install a pole.
+          The cost of the pole can be added as a monthly fee or paid up front. Entergy will be responsible for acquiring,
+          installing, maintaining and repairing the utility pole as well as the lighting.
+        </dd>
+
+        <dt class="collapsed">What if a pole needs to be repaired or replaced?</dt>
+        <dd>
+          The fee for the installation of a utility pole for use with a lighting fixture will be billed monthly for
+          as long as the customer requests the light be kept on. This fee covers the ongoing maintenance and repair
+          requirements for the use of the pole. Should the pole ever need to be replaced, Entergy will repair and/or
+          replace the pole at no additional cost to the customer.
+        </dd>
+
+        <dt class="collapsed">
+          I have multiple accounts with many lights at my business location. Can I receive one
+          bill that covers all the lights for my business?
+        </dt>
+        <dd>
+          Yes. Entergy will create a lighting only account for your business that consolidates and summarizes the
+          cost of all the outdoor lights installed into a separate bill. The bill will itemize the quantity, type,
+          and monthly costs for all of the outdoor lights located at your business.
+        </dd>
+
+        <dt class="collapsed">Will Entergy provide a lighting design service? Is there a cost for this service?</dt>
+        <dd>
+          Entergy’s lighting representatives will provide a lighting design layout for customers constructing a new
+          commercial property. This design services includes recommendations for where to install poles and fixtures
+          and suggestions for the most appropriate type and quantity of lights for parking lots, driveways and other
+          outdoor security lighting needs.  Entergy provides lighting design recommendations at no additional cost
+          to the customer.
+        </dd>
+
+        <dt class="collapsed">I rent or lease my home. Can I request a light for a rental property?</dt>
+        <dd>
+          Yes. Customers who lease or rent their home can install a security light in proximity to the home with the
+          prior approval of the landlord. The cost of this service will be billed to the customer requesting the lighting.
+        </dd>
+
+        <dt class="collapsed">I live in an apartment. Can I have an outdoor security light installed?</dt>
+        <dd>
+          Customers who reside in multi- family facilities such as apartments, condominiums and townhomes typically
+          do not qualify for this service. In most cases, the property owner will install appropriate lighting in
+          common use areas. Entergy’s commercial property management customers who own and maintain properties are
+          eligible for our outdoor security lighting services.
+        </dd>
+
+        <dt class="collapsed">
+          I see there are two options for lights: an amber color and white light. What’s the
+          difference between these, other than appearance?
+        </dt>
+        <dd>
+          Entergy currently offers two types of lighting:
+
+          <ul>
+            <li>High Pressure Sodium (HPS): often used when illumination is more important for security than aesthetics or color. They create an amber glow.</li>
+            <li>Metal Halide (MH): produce clean white light, and are used when aesthetics and color are equally important to security. They are dependable and attractive.</li>
+          </ul>
+        </dd>
+
+        <div class="col-xs-12 show-less-container">
+          <a href="#" class="show-less">Show fewer</a>
+        </div>
+      </dl>
+    </div>
+
+    <div class="col-md-6 illustration">
+      @Helpers.InjectSVG("path-illustration.svg")
+    </div>
+  </div>
+</section>

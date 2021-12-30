@@ -1,0 +1,42 @@
+﻿@model string
+
+<section id="installations" class="installations container" data-nav-text="Our Installations">
+  <div class="row">
+    <div class="col-xs-12">
+      <h2>@(!String.IsNullOrWhiteSpace(Model) ? Model : "Our") Installations</h2>
+    </div>
+
+    <div class="testimonial col-xs-12 col-md-4">
+      <div class="text-wrap">
+        @Helpers.InjectSVG("left-quote.svg")
+        @Helpers.InjectSVG("right-quote.svg")
+
+        <blockquote>
+          <p>
+            fusce varius nisl ac ipsum gravida vel pretium tellus tincidunt integer
+            eu augue augue nunc elit dolor, luctus placerat. Ut fusce varius nisl ac
+            ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit
+            dolor, luctus placerat.
+          </p>
+
+          <p class="byline byline-name">&mdash; JOHN SMITH</p>
+          <p class="byline byline-title"><span>&mdash; </span>President, XYZ Company</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="col-xs-12 col-md-8 installation-viewer">
+      <img src="~/images/proof/installations-large.jpg" />
+
+      <ul class="thumbnails">
+        <li><img src="~/images/proof/installations-thumb-1.jpg" /></li>
+        <li><img src="~/images/proof/installations-thumb-2.jpg" /></li>
+        <li><img src="~/images/proof/installations-thumb-3.jpg" /></li>
+        <li><img src="~/images/proof/installations-thumb-4.jpg" /></li>
+        <li><img src="~/images/proof/installations-thumb-5.jpg" /></li>
+      </ul>
+    </div>
+  </div>
+</section>

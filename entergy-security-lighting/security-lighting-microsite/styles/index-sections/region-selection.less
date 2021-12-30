@@ -1,0 +1,47 @@
+﻿section.region-selection {
+  background-color: #cdc6c0;
+  display: none;
+  padding: 52px 0 31px 0;
+
+  .no-region & {
+    display: block;
+  }
+
+  .dropdown {
+    width: 95%;
+    margin: 42px auto;
+
+    button {
+      width: 100%;
+      text-align: left;
+    }
+
+    ul.dropdown-menu-inverse {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+
+  h2 {
+    font-size: 28px;
+    padding: 0 10px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section.region-selection {
+    padding-top: 60px;
+    padding-bottom: 31px;
+
+    .dropdown {
+      width: 350px;
+      margin: 64px auto;
+    }
+
+    h2 {
+      font-size: 66px;
+      line-height: 1.1;
+    }
+  }
+}

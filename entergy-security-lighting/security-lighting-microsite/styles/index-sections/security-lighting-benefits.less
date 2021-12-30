@@ -1,0 +1,91 @@
+﻿section.security-lighting-benefits {
+  padding-top: 30px;
+  text-align: center;
+
+  h2 {
+    font-size: 29px;
+    line-height: 31px;
+    margin: 0 0 40px;
+  }
+
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 16px 0;
+  }
+
+  img {
+    height: 88px;
+    width: auto !important;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 42px;
+    padding: 0 30px;
+  }
+  // Forces more aesthetic wrapping on the last block's content.
+  div.last p {
+    padding: 0 45px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 88px;
+
+    h2 {
+      font-size: 45px;
+      line-height: normal;
+      margin: 0;
+      margin-bottom: 60px;
+    }
+
+    h4 {
+      font-size: 23px;
+      margin: 44px 0 10px 0;
+    }
+
+    img {
+      height: 100%;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 29px;
+      padding: 0 10px;
+    }
+    // Forces more aesthetic wrapping on the last block's content.
+    div.last p {
+      padding: 0 75px;
+    }
+
+    div.show-more-container {
+      margin-top: 56px;
+      display: none;
+    }
+
+    &.collapsed div.show-more-container {
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    h2 {
+      font-size: 55px;
+    }
+
+    h4 {
+      margin-bottom: 30px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    h2 {
+      font-size: 65px;
+    }
+  }
+}

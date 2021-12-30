@@ -1,0 +1,53 @@
+﻿@model bool
+
+@{
+  var fixtures = security_lighting_microsite.models.Fixture.GetFixtures();
+}
+
+<section id="available-fixtures" class="available-fixtures container-fluid" data-nav-text="Available Fixtures">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Available Fixtures</h2>
+          </div>
+
+          <div class="col-xs-12">
+            <div class="dropdown">
+              <label for="application-type">View:</label>
+
+              <button class="btn btn-entergy btn-entergy-inverse" id="application-type" type="button" data-toggle="dropdown">
+                <span>Commercial Fixtures</span>
+                <span class="caret"></span>
+              </button>
+
+              <ul class="dropdown-menu dropdown-menu-inverse fixture-filter">
+                <li><a href="#" data-filter="commercial-fixtures">Commercial Fixtures</a></li>
+                <li><a href="#" data-filter="residential-fixtures">Residential Fixtures</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="fixture-summary-container" class="col-xs-12">
+            @if (Model && ViewBag.OpCo != null) {
+              Html.RenderAction("FixtureSummary", new { OpCo = ViewBag.OpCo, FixtureType = "shoebox" });
+            }
+          </div>
+
+          <div class="fixture-selector">
+            @foreach (var type in fixtures) {
+              var typeName = type.Type.Replace(' ', '-').ToLower();
+
+              <div class="col-xs-6 col-md-4 fixture-type-@typeName @(Model && fixtures.IndexOf(type) == 0 ? "selected-fixture" : "")">
+                <a href="~/@(ViewBag.OpCo ?? "no-region")/fixture/@typeName">
+                  @Helpers.InjectSVG(string.Format("fixtures/{0}.svg", typeName))
+                </a>
+              </div>
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

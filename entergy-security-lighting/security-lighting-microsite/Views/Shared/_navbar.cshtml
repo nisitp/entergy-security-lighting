@@ -1,0 +1,53 @@
+﻿@{ 
+  string actionName = ViewContext.RouteData.Values["action"].ToString().ToLower();
+}
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="~/@ViewBag.OpCo" class="navbar-brand"><img src="~/images/entergy-logo.png" alt="Entergy" /></a>
+
+      <div class="navbar-right">
+        <button type="button" class="btn btn-default" data-toggle="dropdown">
+          <span id="current-section-name">Security Lighting by Entergy</span>
+
+          <div class="hamburger">
+            <span>toggle menu</span>
+          </div>
+        </button>
+
+        <ul id="nav-menu" class="dropdown-menu">
+          @if (actionName == "index") {
+            <li><a href="#home">Security Lighting Home</a></li>
+            <li><a href="#security-lighting-benefits">Benefits</a></li>
+            <li><a href="#why-is-security-lighting-important">Why is Security Lighting important</a></li>
+            <li><a href="#available-fixtures">Available Fixtures</a></li>
+            <li><a href="#testimonials">What are Entergy customers saying?</a></li>
+            <li><a href="#installations">Our Installations</a></li>
+            <li><a href="#faqs">FAQs about Security Lighting</a></li>
+          }
+
+          @if (actionName == "fixture") {
+            <li><a href="#fixture-details">Fixture Details</a></li>
+            <li><a href="#installations">Our Installations</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#available-fixtures">Available Fixtures</a></li>
+          }
+
+          <li class="menu-separator">
+            <div></div>
+          </li>
+
+          <li class="nav-contact">
+            <button id="nav-contact-us" class="btn btn-entergy">Contact Us</button>
+          </li>
+
+          <li>
+            <span>1-866-603-0192</span>
+            <span>Visit Entergy.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

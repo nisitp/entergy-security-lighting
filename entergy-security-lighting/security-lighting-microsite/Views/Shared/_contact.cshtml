@@ -1,0 +1,88 @@
+﻿<section id="contact" class="contact container-fluid" data-nav-text="Contact Us">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Would you like more information on Security Lighting?</h2>
+          </div>
+
+          <div class="col-xs-12 cta-container">
+            <button id="contact-show" class="btn btn-entergy">Contact Us</button>
+          </div>
+        </div>
+
+        <form class="contact-form" action="~/contact/send">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 col-left">
+              <div class="group">
+                <input id="FirstName" type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="FirstName">First Name</label>
+              </div>
+
+              <div class="group">
+                <input id="LastName" type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="LastName">Last Name</label>
+              </div>
+
+              <div class="group">
+                <input id="Email" type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="Email">Email</label>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-right">
+              <div class="group">
+                <input id="Zip" type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="Zip">Zip Code</label>
+              </div>
+
+              <div class="group">
+                <input id="Phone" type="text" required />
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label for="Phone">Best Contact Number</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row dropdowns">
+            <div class="col-xs-12 col-sm-6 col-left">
+              <label for="BestTimeToCall">When is the best time for us to call?</label>
+              <select id="BestTimeToCall">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Lunch</option>
+                <option>Evening</option>
+              </select>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-right">
+              <label for="AccountType">What type of account do you have?</label>
+              <select id="AccountType">
+                <option>Commercial Customer</option>
+                <option>Residential Customer</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row contact-send">
+            <div class="col-xs-12">
+              <button id="contact-send" class="btn btn-entergy">Send</button>
+
+              <p>In a hurry? You can call us anytime at <strong>1-866-603-0192</strong></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

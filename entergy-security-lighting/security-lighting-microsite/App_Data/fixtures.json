@@ -1,0 +1,290 @@
+﻿[
+  {
+    "type": "Shoebox",
+    "features": [
+      "Available in 400w and 1000w (high pressure sodium); 320w and 1000w (metal halide)",
+      "Available in amber glow light (high pressure sodium)",
+      "Office Park, retail parking lots and roadway lighting",
+      "Installed on Entergy-owned decorative poles"
+    ],
+    "specsheet": "shoebox.pdf",
+    "summary": "Minimalist and modern, Shoebox fixtures are ideal for professional locations like business parking lots and retail zones, as well as for roadway lighting. These fixtures are also flexible, accommodating both high-pressure sodium and metal halide bulbs.",
+    "applications": [
+      "City Streets",
+      "Residential Neighborhoods",
+      "Parks",
+      "Campuses",
+      "Commercial Development"
+    ],
+    "variations": [
+      {
+        "fixture": "150 Watt MH",
+        "illumination": null,
+        "availability": [ "EMI" ]
+      },
+      {
+        "fixture": "175 Watt MH",
+        "illumination": null,
+        "availability": [ "EMI" ]
+      },
+      {
+        "fixture": "320 Watt MH",
+        "illumination": {
+          "diameter": 180
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "1,000 Watt MH",
+        "illumination": {
+          "diameter": 320
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "400 Watt HPS",
+        "illumination": {
+          "diameter": 180
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "1,000 Watt HPS",
+        "illumination": {
+          "diameter": 320
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      }
+    ]
+  },
+  {
+    "type": "Open Bottom",
+    "specsheet": "open-bottom.pdf",
+    "features": [
+      "Available in various wattage sizes",
+      "Available in amber glow light (high pressure sodium)",
+      "Circular lighting pattern",
+      "Area lighting. Primarily residential backyards and driveways",
+      "Installed on Entergy-owned poles"
+    ],
+    "summary": "Open Bottom fixtures provide a pool of circular light directly below the head of the fixture. As such, they are perfect for situations where clients want to illuminate a relatively small zone very well, without excess light “escaping.” Open bottom lighting is therefore a great choice for residential backyards and driveways.",
+    "applications": [
+      "Residential Backyards",
+      "Residential Driveways"
+    ],
+    "variations": [
+      {
+        "fixture": "100 Watt HPS",
+        "illumination": {
+          "diameter": 50
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI" ]
+      },
+      {
+        "fixture": "150 Watt HPS",
+        "illumination": {
+          "diameter": 170
+        },
+        "availability": [ "EAI" ]
+      },
+      {
+        "fixture": "250 Watt HPS",
+        "illumination": {
+          "diameter": 250
+        },
+        "availability": [ "EGSL", "EAI" ]
+      },
+      {
+        "fixture": "320 Watt HPS",
+        "illumination": {
+          "diameter": 300
+        },
+        "availability": [ "ETI", "EAI" ]
+      },
+      {
+        "fixture": "400 Watt HPS",
+        "illumination": null,
+        "availability": [ "EAI" ]
+      }
+    ]
+  },
+  {
+    "type": "Cobrahead",
+    "specsheet": "cobra.pdf",
+    "features": [
+      "Available in various wattage sizes",
+      "Available in amber glow light (high pressure sodium)",
+      "Mounted on Entergy-owned poles"
+    ],
+    "summary": "Durable and well-protected from the elements, Cobra Head lighting is a great choice for high-traffic public areas like parking lot entryways and access roads. Cobra Head fixtures provide a conical lighting arc and accommodate high-pressure sodium bulbs.",
+    "applications": [
+      "Parking Lot",
+      "Roadway"
+    ],
+    "variations": [
+      {
+        "fixture": "150 Watt HPS",
+        "illumination": null,
+        "availability": [ "EMI", "EAI" ]
+      },
+      {
+        "fixture": "250 Watt HPS",
+        "illumination": {
+          "width": 100,
+          "depth": 65
+        },
+        "availability": [ "EMI", "ELL", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "320 Watt HPS",
+        "illumination": null,
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "400 Watt HPS (Non-Residential only)",
+        "illumination": {
+          "width": 150,
+          "depth": 80
+        },
+        "availability": [ "EMI", "ELL", "EAI", "ENO" ]
+      }
+    ]
+  },
+  {
+    "type": "Directional",
+    "specsheet": "directional.pdf",
+    "features": [
+      "Available in Various Wattage Sizes",
+      "Available in Amber Glow Light (High Pressure Sodium)",
+      "Available in Bright White Light (Metal Halide)",
+      "Area Lighting and Feature Highlighting",
+      "Installed on Entergy-Owned Poles"
+    ],
+    "summary": "Ideal for situations where lighting needs can vary, Directional fixtures can be positioned to provide the best illumination required on any given day. These flexible fixtures also accommodate both high-pressure sodium and metal halide bulbs.",
+    "applications": [
+      "Area Lighting",
+      "Feature Highlighting"
+    ],
+    "variations": [
+      {
+        "fixture": "320 Watt MH",
+        "illumination": {
+          "width": 60,
+          "depth": 95
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "1,000 Watt MH",
+        "illumination": {
+          "width": 80,
+          "depth": 130
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "100 Watt HPS",
+        "illumination": {
+          "width": 30,
+          "depth": 50
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "ENO" ]
+      },
+      {
+        "fixture": "150 Watt HPS",
+        "illumination": null,
+        "availability": [ "EMI" ]
+      },
+      {
+        "fixture": "250 Watt HPS",
+        "illumination": {
+          "width": 65,
+          "depth": 80
+        },
+        "availability": [ "EMI", "ELL", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "400 Watt HPS",
+        "illumination": null,
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "1,000 Watt HPS",
+        "illumination": {
+          "width": 75,
+          "depth": 110
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      }
+    ]
+  },
+  {
+    "type": "Traditionaire",
+    "specsheet": "traditionaire.pdf",
+    "features": [
+      "Available in Various Wattage Sizes",
+      "Available in Amber Glow Light (High Pressure Sodium)",
+      "Subdivision, Apartment Multi-Family, Office Park, Retail, and Roadway Lighting",
+      "Installed on Entergy-owned decorative poles"
+    ],
+    "summary": "These elegant fixtures are the go-to option for lighting that will be placed in high-visibility locations like parks, gardens and well-traveled residential streets. The traditional design mirrors an antique gas-lamp and can be fitted with high-pressure sodium bulbs.",
+    "applications": [
+      "Subdivisions",
+      "Apartments",
+      "Office Parks",
+      "Retail",
+      "Roadway Lighting"
+    ],
+    "variations": [
+      {
+        "fixture": "150 Watt HPS",
+        "illumination": {
+          "diameter": 80
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "250 Watt HPS",
+        "illumination": {
+          "diameter": 150
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      }
+    ]
+  },
+  {
+    "type": "Acorn",
+    "specsheet": "acorn.pdf",    
+    "features": [
+      "Available in Various Wattage Sizes",
+      "Available in Amber Glow Light (High Pressure Sodium)",
+      "Available in Bright White Light (Metal Halide)",
+      "Subdivision, Apartment Multi family, Office Park, Retail, and Roadway Lighting",
+      "Installed on Entergy-owned decorative poles"
+    ],
+    "summary": "A good compromise between form and elegance, acorn fixtures are extremely flexible and are perfect for housing subdivisions, roadways and office external areas. They can be fitted with both high-pressure sodium and metal halide bulbs.",
+    "applications": [
+      "Subdivisions",
+      "Apartments",
+      "Office Parks",
+      "Retail",
+      "Roadway Lighting"
+    ],
+    "variations": [
+      {
+        "fixture": "150 Watt HPS",
+        "illumination": {
+          "diameter": 80
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      },
+      {
+        "fixture": "150 Watt MH",
+        "illumination": {
+          "diameter": 80
+        },
+        "availability": [ "EMI", "EGSL", "ELL", "ETI", "EAI", "ENO" ]
+      }
+    ]
+  }
+]

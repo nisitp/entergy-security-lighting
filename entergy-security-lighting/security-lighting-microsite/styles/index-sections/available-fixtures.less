@@ -1,0 +1,327 @@
+﻿section.available-fixtures {
+  background-color: #cdc6c0;
+  padding: 45px 0 35px;
+
+  .no-region & {
+    display: none;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .dropdown {
+    margin-bottom: 50px;
+    text-align: center;
+
+    label {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 50px;
+    }
+
+    button {
+      width: 100%;
+      text-align: left;
+    }
+
+    .dropdown-menu-inverse {
+      min-width: 100%;
+      right: 0;
+    }
+  }
+
+  .fixture-summary {
+    background-color: #ddd9d4;
+    border: 2px solid #fff;
+
+    .fixture-summary-images {
+      margin-bottom: 50px;
+      text-align: center;
+
+      img {
+        display: none;
+      }
+
+      .featured-image {
+        display: block;
+        width: ~"calc(100% - 36px)";
+        margin: 18px auto;
+      }
+    }
+
+    .fixture-summary-data {
+      margin: 17px;
+
+      h4, h5 {
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+      }
+
+      h4 {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 25px;
+      }
+
+      h5 {
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 41px;
+        margin-bottom: 18px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      ul {
+        margin: 0 0 50px;
+        line-height: 24px;
+
+        li {
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+
+  .fixture-selector {
+    clear: both;
+    overflow: hidden;
+    padding-top: 30px;
+
+    > div {
+      cursor: pointer;
+    }
+
+      > div.selected-fixture {
+        cursor: default;
+      }
+
+    svg {
+      border: 3px solid #fff;
+      margin-bottom: 25px;
+      width: 100%;
+
+      path, polygon, line, rect {
+        fill: #fff;
+      }
+    }
+
+      svg.open-bottom {
+        path, line {
+          fill: none;
+          stroke: #FFFFFF;
+          stroke-width: 3;
+          stroke-miterlimit: 10;
+        }
+      }
+
+      svg.traditionaire-colonial {
+        path.st0, line.st0 {
+          fill: #DED9D5;
+        }
+      }
+
+    .selected-fixture svg {
+      background-color: #ddd9d4;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 60px;
+
+    h2 {
+      font-size: 45px;
+      margin-bottom: 75px;
+    }
+
+    .dropdown {
+      float: right;
+      margin-bottom: 60px;
+
+      label {
+        font-size: 24px;
+        font-weight: lighter;
+        line-height: 50px;
+        padding-right: 15px;
+        vertical-align: middle;
+      }
+
+      button {
+        width: 350px;
+      }
+
+      .dropdown-menu-inverse {
+        right: 0;
+        left: auto;
+        width: 350px;
+        min-width: 0;
+      }
+    }
+
+    .fixture-summary {
+      background-color: #ddd9d4;
+      border: 3px solid #fff;
+      overflow: hidden;
+
+      .fixture-summary-images {
+        float: left;
+        margin: 10px 27px;
+        width: 250px;
+        text-align: left;
+
+        img {
+          display: inline-block;
+          border: 2px solid #fff;
+          float: left;
+          margin-bottom: 15px;
+          width: 48%;
+        }
+
+          img:nth-child(odd) {
+            float: right;
+          }
+
+        .featured-image {
+          float: left;
+          width: 100%;
+        }
+      }
+
+      .fixture-summary-data {
+        float: left;
+        margin: 22px 10px;
+        width: 350px;
+
+        h4, h5 {
+          font-family: 'Roboto', sans-serif;
+          text-align: left;
+        }
+
+        h4 {
+          font-size: 22px;
+          font-weight: bold;
+          margin-top: 5px;
+          margin-bottom: 25px;
+        }
+
+        h5 {
+          font-size: 18px;
+          font-weight: bold;
+          margin-top: 59px;
+          margin-bottom: 18px;
+        }
+
+        p {
+          font-size: 18px;
+          font-weight: lighter;
+        }
+
+        ul {
+          margin: 0 0 50px;
+
+          li {
+            font-size: 18px;
+            font-weight: lighter;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+
+    .fixture-selector {
+      overflow: hidden;
+      padding: 80px 0;
+
+      svg {
+        border: 3px solid #fff;
+        margin-bottom: 25px;
+        width: 100%;
+
+        path, polygon, line, rect {
+          fill: #fff;
+        }
+      }
+
+        svg.open-bottom {
+          path, line {
+            fill: none;
+            stroke: #FFFFFF;
+            stroke-width: 3;
+            stroke-miterlimit: 10;
+          }
+        }
+
+        svg.traditionaire-colonial {
+          path.st0, line.st0 {
+            fill: #DED9D5;
+          }
+        }
+
+      .selected-fixture svg {
+        background-color: #ddd9d4;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    h2 {
+      font-size: 55px;
+      margin-bottom: 75px;
+    }
+
+    .fixture-summary {
+      .fixture-summary-images {
+        width: 300px;
+        margin: 20px 35px;
+      }
+
+      .fixture-summary-data {
+        margin: 35px;
+        width: 480px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    h2 {
+      font-size: 65px;
+    }
+
+    .fixture-summary {
+      .fixture-summary-images {
+        width: 350px;
+        margin: 20px 50px;
+      }
+
+      .fixture-summary-data {
+        margin: 35px 52px;
+        width: 565px;
+      }
+    }
+  }
+}
+
+// New Orleans doesn't offer any Open Bottom/NightWatchman SKUs
+.new-orleans .fixture-type-open-bottom {
+  display: none;
+}
+
+// Texas doesn't offer any Cobrahead SKUs
+.texas .fixture-type-cobrahead {
+  display: none;
+}
+
+.residential-fixtures .fixture-type-shoebox,
+.residential-fixtures .fixture-type-cobrahead,
+.residential-fixtures .fixture-type-traditionaire,
+.residential-fixtures .fixture-type-acorn {
+  display: none;
+}

@@ -1,0 +1,307 @@
+﻿body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  padding-top: 64px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', serif;
+}
+
+h2, h3, h4, h5 {
+  text-align: center;
+}
+
+ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+.container-fluid > .row {
+  margin: 0;
+
+  > .col-xs-12 {
+    padding: 0;
+  }
+}
+
+.btn-entergy {
+  background-color: #fff;
+  border-radius: 0;
+  color: #e70b28;
+  font-size: 20px;
+  font-weight: bold;
+  min-height: 50px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+
+  &:hover, &:focus {
+    color: #e70b28;
+  }
+
+  span.caret {
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-width: 10px;
+    color: #e80a26;
+    float: right;
+    height: 20px;
+    margin-top: 12px;
+    width: 20px;
+  }
+}
+
+.btn-entergy-inverse {
+  background-color: #353439;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 29px;
+
+  &:hover, &:focus {
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-entergy.btn-hollow {
+  background-color: transparent;
+  border-color: #e70b28;
+  border-width: 2px;
+  color: #e70b28;
+  font-size: 18px;
+  padding: 5px 10px;
+  min-height: 30px;
+}
+
+.dropdown-menu-inverse {
+  min-width: 350px;
+  background-color: #353439;
+  border-radius: 0;
+
+  li {
+    a {
+      color: #fff;
+      font-size: 20px;
+      padding: 5px 20px;
+    }
+  }
+}
+
+.testimonial {
+  text-align: center;
+
+  .text-wrap {
+    position: relative;
+
+    svg.quote {
+      width: 48px;
+      height: 32px;
+      margin: 0 10px;
+      fill: none;
+
+      path {
+        fill: none;
+        stroke: #aca298;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    }
+
+    blockquote {
+      border: 0;
+      margin: 0;
+      padding: 10px;
+
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+      }
+
+        p.byline-name {
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+
+        p.byline-title {
+          font-size: 18px;
+          font-style: italic;
+          padding-left: 23px;
+        }
+    }
+  }
+}
+
+a.show-more, a.show-less {
+  background-position: right 6px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  color: #ed1737;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 26px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+a.show-more {
+  background-image: url(/images/svg/down-arrow.svg);
+}
+
+a.show-less {
+  background-image: url(/images/svg/up-arrow.svg);
+}
+
+.full-bleed-background {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+  .full-bleed-background.svg-background {
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .full-bleed-background.zigzag-up-down, .full-bleed-background.zigzag-single {
+    background-image: url(/images/svg/centered-zigzag-line.svg);
+    background-size: 1800px;
+    height: 13px;
+  }
+
+  .full-bleed-background.white-arrow-line {
+    background-image: url(/images/svg/white-arrow-line.svg);
+    background-position: left;
+    background-size: 5900px;
+    left: 45px;
+    height: 36px;
+    margin-top: -10px;
+    width: auto;
+  }
+
+.separator-container {
+  height: 0;
+  position: relative;
+
+  img {
+    position: absolute;
+    height: 32px;
+    top: -8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding-top: 78px;
+  }
+
+  h2, h3 {
+    font-size: 45px;
+  }
+
+  .btn-entergy {
+    width: auto;
+    font-size: 24px;
+  }
+
+  .btn-entergy-inverse {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: bold;
+  }
+
+  .full-bleed-background.zigzag-up-down {
+    background-image: url(/images/svg/2-zigzag-line.svg);
+    background-size: initial;
+    height: 20px;
+  }
+
+  .full-bleed-background.zigzag-single {
+    background-image: url(/images/svg/1-zigzag-line.svg);
+    background-size: initial;
+    height: 12px;
+  }
+
+  .full-bleed-background.white-arrow-line {
+    right: auto;
+    left: auto;
+    width: 100%;
+  }
+
+  .testimonial {
+    text-align: left;
+
+    .text-wrap {
+      svg.quote {
+        width: 60px;
+        height: 45px;
+        margin: 0;
+        bottom: -45px;
+      }
+
+      svg.left-quote {
+        left: 0;
+      }
+
+      svg.right-quote {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h2, h3 {
+    font-size: 55px;
+  }
+
+  .benefits-toggle-container {
+    margin-top: 20px;
+  }
+
+  .testimonial {
+    .text-wrap {
+      blockquote {
+        padding-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h2, h3 {
+    font-size: 65px;
+  }
+}
+
+@import "navbar.less";
+
+@import "index-sections/header.less";
+@import "index-sections/security-lighting-benefits.less";
+
+@import "index-sections/benefits-of-leasing.less";
+@import "index-sections/why-is-security-lighting-important.less";
+@import "index-sections/region-selection.less";
+@import "index-sections/available-fixtures.less";
+
+@import "index-sections/best-bulb-choices.less";
+@import "index-sections/testimonials.less";
+@import "index-sections/contact.less";
+@import "index-sections/installations.less";
+@import "index-sections/faqs.less";
+@import "footer.less";
+
+@import "home-fixture.less";

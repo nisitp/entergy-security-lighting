@@ -1,0 +1,144 @@
+﻿section.benefits-of-leasing {
+  display: none;
+
+  .benefits-table {
+    padding: 20px 0 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0 0 25px;
+  }
+
+  li:nth-child(2) {
+    background-color: #ecebe9;
+  }
+
+  ul.heading {
+    display: none;
+  }
+
+  ul.benefit-comparison {
+    li {
+      font-size: 20px;
+      padding: 4px 15px;
+
+      p:first-child {
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+
+      p:last-child {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+
+      li:first-child {
+        font-size: 22px;
+        font-weight: bold;
+      }
+  }
+
+  div.show-less-container {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.benefits-toggle-container {
+  margin-bottom: 45px;
+  text-align: center;
+
+  .show-less {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section.benefits-of-leasing {
+    padding: 60px 0;
+
+    h3 {
+      font-size: 35px;
+      margin-bottom: 46px;
+    }
+
+    .benefits-table {
+      display: table;
+    }
+
+    ul {
+      display: table-row;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+
+      li {
+        display: table-cell;
+        padding: 20px 35px;
+        border-bottom: 2px solid #efefef;
+      }
+    }
+
+      ul.heading {
+        display: table-header-group;
+        font-size: 24px;
+      }
+
+      ul.benefit-comparison {
+        li {
+          display: table-cell;
+          padding: 15px 35px;
+          vertical-align: middle;
+
+          p:first-child {
+            // Hide the inline Entergy/Customer headings from mobile.
+            display: none;
+          }
+
+          p:last-child {
+            font-size: 20px;
+            font-weight: lighter;
+          }
+        }
+      }
+
+    li:first-child {
+      width: 23%;
+    }
+
+    li:nth-child(2) {
+      border-color: #fbfaf8;
+      width: 35%;
+    }
+
+    li:nth-child(3) {
+      width: 40%;
+    }
+
+    ul:last-child li {
+      border: none;
+    }
+
+    div.show-less-container {
+      margin: 70px 0 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  section.benefits-of-leasing {
+    h3 {
+      font-size: 55px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  section.benefits-of-leasing {
+    h3 {
+      font-size: 65px;
+    }
+  }
+}

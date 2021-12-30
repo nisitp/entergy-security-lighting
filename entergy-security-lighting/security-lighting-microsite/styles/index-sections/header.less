@@ -1,0 +1,122 @@
+﻿#home-index {
+  header {
+    color: #fff;
+    position: relative;
+    background-image: url(/images/header-image.jpg);
+    background-size: cover;
+    padding: 20px 0 35px;
+
+    div.text-wrap {
+      float: left;
+    }
+
+    h1 {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 38px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    svg {
+      display: none;
+    }
+
+    @media only screen and (min-width: 768px) {
+      height: 440px;
+      padding-top: 100px;
+
+      div.text-wrap {
+        float: left;
+        width: 420px;
+      }
+
+      h1 {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 65px;
+        text-align: left;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 30px;
+        margin-top: 30px;
+        text-align: left;
+      }
+
+      svg {
+        display: block;
+        float: right;
+        width: 35%;
+
+        path, polyline, line {
+          fill: none;
+          stroke: #FFFFFF;
+          stroke-width: 4;
+          stroke-miterlimit: 10;
+        }
+
+        rect {
+          fill: none;
+        }
+
+        polyline, line, rect {
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+        }
+      }
+
+      &.animation-complete svg {
+        polyline, line, rect {
+          opacity: 1;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      height: 575px;
+      padding-top: 135px;
+
+      div.text-wrap {
+        width: 575px;
+      }
+
+      h1 {
+        font-size: 64px;
+        line-height: 74px;
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      height: 700px;
+      padding-top: 175px;
+
+      div.text-wrap {
+        width: 650px;
+      }
+
+      h1 {
+        font-size: 84px;
+        line-height: 97px;
+      }
+
+      p {
+        font-size: 30px;
+        line-height: 48px;
+      }
+    }
+  }
+}

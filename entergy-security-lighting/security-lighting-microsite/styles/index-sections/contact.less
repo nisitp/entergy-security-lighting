@@ -1,0 +1,180 @@
+﻿section.contact {
+  background-color: #eb0a26;
+  padding: 40px 0 45px;
+  position: relative;
+  z-index: 1;
+
+  h2 {
+    color: #fff;
+    line-height: 32px;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .cta-container {
+    text-align: center;
+  }
+
+  .contact-form {
+    display: none;
+  }
+
+  label {
+    color: #fff;
+  }
+
+  .group {
+    position: relative;
+    margin-bottom: 40px;
+
+    input {
+      color: #fff;
+      font-size: 18px;
+      background-color: transparent;
+      padding: 10px 10px 10px 19px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #fff;
+    }
+
+      input:focus {
+        outline: none;
+      }
+
+    label {
+      color: #fff;
+      font-size: 18px;
+      font-weight: lighter;
+      position: absolute;
+      pointer-events: none;
+      left: 20px;
+      top: 10px;
+      transition: 0.2s ease all;
+    }
+
+    input:focus ~ label, input:valid ~ label {
+      top: -20px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .bar {
+      position: relative;
+      display: block;
+      width: 50%;
+    }
+
+      .bar:before, .bar:after {
+        content: '';
+        height: 2px;
+        width: 0;
+        bottom: 1px;
+        position: absolute;
+        background: #fff;
+        transition: 0.2s ease all;
+      }
+
+      .bar:before {
+        left: 100%;
+      }
+
+      .bar:after {
+        right: 0;
+      }
+
+    input:focus ~ .bar:before, input:focus ~ .bar:after {
+      width: 100%;
+    }
+  }
+
+  .dropdowns {
+    label {
+      font-size: 20px;
+      font-weight: lighter;
+      margin-bottom: 24px;
+      padding-left: 20px;
+      float: left;
+    }
+
+    select {
+      width: 100%;
+      float: left;
+      clear: both;
+      appearance: none;
+      padding: 10px 15px;
+      font-size: 20px;
+      color: #fff;
+      border: 2px solid #fff;
+      background-color: #e70b28;
+    }
+
+    .col-right {
+      margin-top: 35px;
+    }
+  }
+
+  .contact-send {
+    .btn-entergy {
+      margin: 35px auto;
+    }
+
+    p {
+      color: #fff;
+      font-size: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-top: 88px;
+    padding-bottom: 100px;
+
+    h2 {
+      line-height: normal;
+      margin: 0;
+      margin-bottom: 50px;
+      padding: 0 15px;
+    }
+
+    .cta-container {
+      text-align: center;
+    }
+
+    .col-left {
+      padding-left: 60px;
+      padding-right: 20px;
+    }
+
+    .col-right {
+      padding-left: 20px;
+      padding-right: 60px;
+    }
+
+    .dropdowns {
+      margin-top: 35px;
+
+      .col-right {
+        margin-top: 0;
+      }
+    }
+
+    .contact-send {
+      .btn-entergy {
+        display: block;
+        margin: 50px auto;
+        width: 400px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+  }
+}
